@@ -1,0 +1,8 @@
+--- dkimproxy-0.15/tests/variant_keys/Makefile.am~	2006-10-10 21:13:00.000000000 +0300
++++ dkimproxy-0.15/tests/variant_keys/Makefile.am	2007-05-10 00:39:58.196292134 +0300
+@@ -5,4 +5,4 @@
+ 	testbad1.txt \
+ 	testbad2.txt \
+ 	testbad3.txt \
+-	testrevoked.txt \
++	testrevoked.txt
