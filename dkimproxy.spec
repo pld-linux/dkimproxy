@@ -2,6 +2,7 @@
 # - dkfilter user, initscript
 %include	/usr/lib/rpm/macros.perl
 Summary:	dkimproxy - an SMTP-proxy designed for Postfix
+Summary(pl.UTF-8):	dkimproxy - proxy SMTP zaprojektowane dla Postfiksa
 Name:		dkimproxy
 Version:	0.15
 Release:	0.1
@@ -29,6 +30,14 @@ separate proxies, an "outbound" proxy for signing outgoing email, and
 an "inbound" proxy for verifying signatures of incoming email. With
 Postfix, the proxies can operate as either Before-Queue or After-Queue
 content filters.
+
+%description -l pl.UTF-8
+DKIM Proxy to proxy SMTP podpisujące i/lub sprawdzające listy przy
+użyciu modułu Mail::DKIM. Jest zaprojektowane dla Postfiksa. Obejmuje
+dwa oddzielne proxy - "wychodzące" do podpisywania poczty wychodzącej
+i "przychodzące" do sprawdzania podpisów poczty przychodzącej. Przy
+użyciu Postfiksa proxy te mogą operować jako filtry treści
+Before-Queue lub After-Queue.
 
 %prep
 %setup -q
