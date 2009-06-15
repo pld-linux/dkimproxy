@@ -4,20 +4,20 @@
 Summary:	dkimproxy - an SMTP-proxy designed for Postfix
 Summary(pl.UTF-8):	dkimproxy - proxy SMTP zaprojektowane dla Postfiksa
 Name:		dkimproxy
-Version:	0.15
+Version:	1.1
 Release:	0.1
 License:	GPL v2
 Group:		Daemons
-Source0:	http://jason.long.name/dkimproxy/%{name}-%{version}.tar.gz
-# Source0-md5:	41fa377a910f863d26681724f737fbaa
-Patch0:		%{name}-perllib.patch
-Patch1:		%{name}-am.patch
-URL:		http://jason.long.name/dkimproxy/
+Source0:	http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
+# Source0-md5:	e462bf16d081442d484ef51072f80be9
+#Patch0:		%{name}-perllib.patch
+#Patch1:		%{name}-am.patch
+URL:		http://dkimproxy.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	perl-Error
-BuildRequires:	perl-Mail-DKIM >= 0.20
-BuildRequires:	perl-Net-Server >= 0.89
+BuildRequires:	perl-Mail-DKIM >= 0.30
+BuildRequires:	perl-Net-Server >= 0.91
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -41,8 +41,8 @@ Before-Queue lub After-Queue.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
+#%patch0 -p1
+#%patch1 -p1
 
 %build
 %{__aclocal}
