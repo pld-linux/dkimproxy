@@ -4,12 +4,12 @@
 Summary:	dkimproxy - an SMTP-proxy designed for Postfix
 Summary(pl.UTF-8):	dkimproxy - proxy SMTP zaprojektowane dla Postfiksa
 Name:		dkimproxy
-Version:	1.1
+Version:	1.2
 Release:	0.1
 License:	GPL v2
 Group:		Daemons
 Source0:	http://downloads.sourceforge.net/%{name}/%{name}-%{version}.tar.gz
-# Source0-md5:	e462bf16d081442d484ef51072f80be9
+# Source0-md5:	db32f81c33636a9cf0b1e22d4eb6d959
 #Patch0:		%{name}-perllib.patch
 #Patch1:		%{name}-am.patch
 URL:		http://dkimproxy.sourceforge.net/
@@ -71,9 +71,10 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/dkimproxy.out
 %attr(755,root,root) %{_bindir}/dkimsign.pl
 %attr(755,root,root) %{_bindir}/dkimverify.pl
-%dir %{perl_vendorlib}/MSDW
-%dir %{perl_vendorlib}/MSDW/SMTP
-%{perl_vendorlib}/MSDW/SMTP/Client.pm
-%{perl_vendorlib}/MSDW/SMTP/Server.pm
-%{perl_vendorlib}/MySmtpProxyServer.pm
-%{perl_vendorlib}/MySmtpServer.pm
+# %dir %{perl_vendorlib}/MSDW
+# %dir %{perl_vendorlib}/MSDW/SMTP
+# %{perl_vendorlib}/MSDW/SMTP/Client.pm
+# %{perl_vendorlib}/MSDW/SMTP/Server.pm
+# %{perl_vendorlib}/MySmtpProxyServer.pm
+# %{perl_vendorlib}/MySmtpServer.pm
+# /usr/lib/MSDW/SMTP/Client.pm
