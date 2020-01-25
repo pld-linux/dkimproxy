@@ -1,6 +1,5 @@
 # TODO
 # - dkfilter user, initscript
-%include	/usr/lib/rpm/macros.perl
 Summary:	dkimproxy - an SMTP-proxy designed for Postfix
 Summary(pl.UTF-8):	dkimproxy - proxy SMTP zaprojektowane dla Postfiksa
 Name:		dkimproxy
