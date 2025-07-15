@@ -40,8 +40,8 @@ Before-Queue lub After-Queue.
 
 %prep
 %setup -q
-#%patch0 -p1
-#%patch1 -p1
+#%%patch0 -p1
+#%%patch1 -p1
 
 %build
 %{__aclocal}
